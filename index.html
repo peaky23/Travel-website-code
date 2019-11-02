@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css" integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800|Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" />
+    <link href="style.css" rel="stylesheet">
+
+    <script>
+      $(document).ready(function(){
+        $(".toggle-icon #hamb").click(function(){
+          $(".nav-collapse").show("5000");
+          $(".toggle-icon #hamb").hide("5000");
+          $(".toggle-icon #delete").show("5000");
+        });
+      });
+
+
+      $(document).ready(function(){
+        $(".toggle-icon #delete").click(function(){
+          $(".nav-collapse").hide("5000");
+          $(".toggle-icon #delete").hide("5000");
+          $(".toggle-icon #hamb").show("5000");
+        });
+      });
+
+      $(document).ready(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500);
+  });
+});
+ 
+        $(document).ready(function(){
+           function autoslider() {
+            $(".review-box1").animate({
+              right: -3000
+            },1000).delay( 5000 );
+            $(".review-box2").animate({
+              left: 0
+              },1000).delay( 5000 );
+              $(".review-box2").animate({
+              left: -3000},1000).delay( 5000 );
+              $(".review-box1").animate({
+                right: 0
+              },1000).delay( 5000 );
+          };
+          setInterval(autoslider, 4000);
+        });
+
+      </script>
+
+    <title>Travel Agency</title>
+</head>
+<body>
+    <section id="home">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="logo" href="#home">Travel</a>
+                    <div class="toggle-icon">
+                    
+                      <i id="hamb" class="fas fa-bars"></i>  <i id="delete" class="fas fa-times"></i>
+                    <div class="nav-collapse">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav_link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav_link" href="#tours">Tours</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav_link" href="#destinations">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav_link" href="#">Testimonials</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav_link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav_link" href="#tours">Tours</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav_link" href="#destinations">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav_link" href="#">Testimonials</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+                  <div class="hero">
+                    <h1 class="hero-header">Travel Where Ever You <br>Want!</h1>
+
+                    <div class="Search-bar navbar-light">
+                      <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Destination, City" aria-label="Search">
+                      </form>
+                      <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Any month" aria-label="Search">
+                      </form>
+                      <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Sort by Date" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+          
+                    </div>
+
+                    <section id="section08" class="demo">
+                      <a href="#tours"><span></span></a>
+                    </section>
+
+                    
+                  </div>
+    </section>
+
+    <!---- Tours  ----->
+    <section id="tours">
+      <h1 class="header">Tours</h1>
+      <h3 class="sub-header">CHECK OUT OUR BEST PROMOTION TOURS</h3>
+      <div class="container">
+        <div class="tour-box1">
+          <div class="tour-content1">
+            <span>England<br>UK, Trip</span>
+            <p>10 Days <br>$8,000</p>
+          </div>
+        </div> 
+        <div class="tour-box2">
+            <div class="tour-content2">
+              <span>England<br>UK, Trip</span>
+              <p>10 Days <br>$8,000</p>
+            </div>
+          </div>  
+          <div class="tour-box3">
+              <div class="tour-content3">
+                <span>England<br>UK, Trip</span>
+                <p>10 Days <br>$8,000</p>
+              </div>
+            </div>   
+      </div>  
+      <button class="btn-secondary">Explore more</button>  
+      </div>  
+    </section>
+
+    <!------ Destinations ------->
+    <section id="destinations">
+      <h1 class="header">Popular Destinations</h1>
+      <h3 class="sub-header">World's best tourist Destinations</h3>
+      <div class="destination-container">
+      <div class="destination-box1">
+        <div class="destination-content">
+          <h3>Italy</h3>
+          <h5>In the streets of Rome</h5>
+        </div>
+      </div>
+      <div class="destination-box2">
+          <div class="destination-content">
+            <h3>America</h3>
+            <h5>In the mountains of america</h5>
+          </div>
+        </div>
+        <div class="destination-box3">
+            <div class="destination-content">
+              <h3>Tokyo</h3>
+              <h5>In the streets of Tokyo</h5>
+            </div>
+          </div>
+    </section>
+
+    <!------ Statistics ------->
+    <section class="statistics">
+      <div class="statistics-container">
+      <div class="customers">
+          <i class="far fa-smile"></i>
+          <h1 class="num text-center">84,467</h1>
+          <p>Happy Customers</p>
+      </div>
+      <div class="travels">
+          <i class="fas fa-plane"></i>
+          <h1 class="num">1458</h1>
+          <p>Tour</p>
+      </div>
+      <div class="discussions">
+          <i class="far fa-smile"></i>
+          <h1 class="num">11,000</h1>
+          <p>Discussion</p>
+      </div>
+      </div>
+
+      <script src="jquery.waypoints.min.js"></script>
+      <script src="jquery.counterup.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.statistics .statistics-container .num').counterUp({
+      delay: 10,
+      time: 1500
+  });
+        });
+      </script> 
+
+    </section>
+
+    <!---  Testimonials  ---->
+    <section id="testimonials">
+      <h1 class="header">Our Clients Reviews</h1>
+      <h3 class="sub-header">What our customers say about us</h3>
+      <div class="review-box1">
+        <div class="client-img text-center"><img src="team-image-2-3.jpg"></div>
+        <div class="client-name">
+          <h2>Clementine</h2>
+        </div>
+        <div class="client-review">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Laborum ea dolorum nisi explicabo reiciendis repellat.</p>
+        </div>
+        
+        <div class="circle-1">
+          <i class="far fa-circle"></i>
+        </div>
+        <div class="circle-2">  
+          <i class="fas fa-circle"></i>
+        </div>
+        <div class="circle-3">
+          <i class="far fa-circle"></i>
+        </div> 
+      </div> 
+
+        <div class="review-box2">
+          <div class="client-img text-center"><img src="team-image-2-3.jpg"></div>
+          <div class="client-name">
+            <h2>Clementine</h2>
+          </div>
+          <div class="client-review">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Laborum ea dolorum nisi explicabo reiciendis repellat.</p>
+          </div>
+          
+          <div class="circle-2">  
+            <i class="fas fa-circle"></i>
+          </div>
+          <div class="circle-1">
+            <i class="far fa-circle"></i>
+          </div>
+          <div class="circle-3">
+            <i class="far fa-circle"></i>
+          </div> 
+        </div> 
+
+    </section>
+ 
+
+    <section id="faq">
+      <h1 class="header">FaQ's</h1>
+      <h3 class="sub-header">Most asked questions by clients</h3>
+      <div class="faq-container">
+        <div class="questions-1">
+
+          <h2><i class="fas fa-arrow-circle-right"></i>What are the payment methodes?</h2>
+          
+          <h2><i class="fas fa-arrow-circle-right"></i>Is there any refund?</h2>
+
+          <h2><i class="fas fa-arrow-circle-right"></i>is it secure?</h2>
+
+        </div>
+        <div class="questions-2">
+
+            <h2><i class="fas fa-arrow-circle-right"></i>What should i wear?</h2>
+
+            <h2><i class="fas fa-arrow-circle-right"></i>What can i bring?</h2>
+
+            <h2><i class="fas fa-arrow-circle-right"></i>How is the weather?</h2>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="about">
+          <h2>About <strong>Travel</strong></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nihil iusto tempora nemo. Id, architecto.
+          </p>
+        </div>
+        <div class="Awards">
+            <h2>Awards</h2>
+            <img src="psa-logo_2.png">
+            <img src="sandals-star-awards.png">
+            <img src="psa-logo_2.png">
+          </div>
+        <div class="contact-us">
+          <h2>Contact Us</h2>
+          <span><strong>Email:</strong> Travel@email.com</span>
+          <span><strong>Tel:</strong> +1 575-3468-456</span>
+          <span><strong>Adress:</strong> Avenue Lorem ipsum 23 dolor Ny,City</span>
+        </div>
+      </div>  
+    </footer>
+</body>
+</html>
